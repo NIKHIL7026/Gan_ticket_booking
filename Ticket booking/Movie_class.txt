@@ -1,0 +1,71 @@
+package Booking;
+
+import java.util.Scanner;
+
+public class Movie
+{
+	private String name;
+	private String theatername;
+	private int nooftickets;
+	private int cost;
+	
+Movie()
+{
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the name of the movie: ");
+	this.name = sc.nextLine();
+	System.out.println("Enter the theater name: ");
+	this.theatername = sc.nextLine();
+	System.out.println("Enter the no of tickets");
+	this.nooftickets = sc.nextInt();
+	System.out.println("Enter the cost per ticket: ");
+	this.cost = sc.nextInt();
+}
+void setName(String name)
+{
+	this.name = name;
+}
+String getName()
+{
+	return name;
+}
+void settheatername(String theatername)
+{
+	this.theatername = theatername;
+}
+String gettheatername()
+{
+	return theatername;
+}
+void setnooftickets(int nooftickets)
+{
+	this.nooftickets = nooftickets;
+}
+int getnooftickets()
+{
+	return nooftickets;
+}
+void setcost(int cost)
+{
+	this.cost = cost;
+}
+int getcost()
+{
+	return cost;
+}
+
+void storeAllDetails(String name, String brand, int memory, int camera, double price)
+{
+	this.name = name;
+	this.theatername = theatername;
+	this.nooftickets = nooftickets;
+	this.cost = cost;
+}
+void viewAllDetails()
+{
+	System.out.println("Name : "+name);
+	System.out.println("theater name: "+theatername);
+	System.out.println("No of tickets: "+nooftickets);
+	System.out.println("cost of the ticket: "+cost);
+}
+}
